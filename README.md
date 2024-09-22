@@ -40,7 +40,7 @@ Follow the steps below to set up SpikeRL on your local machine.
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/spike-rl.git
+   git clone https://github.com/tokey-tahmid/spike-rl.git
    cd spike-rl
    ```
 
@@ -106,21 +106,21 @@ cd src
 python spikeRL.py --env Walker2d-v4 --epochs 5
 ```
 
-    - To run spikeRL with mixed precision and without mpi:
+- To run spikeRL with mixed precision and without mpi:
 
 ```bash
 cd src
 python spikeRL_amp.py --env Walker2d-v4 --epochs 5
 ```
 
-    - To run spikeRL with mixed precision and mpi:
+- To run spikeRL with mixed precision and mpi:
 
 ```bash
 cd src
 mpiexec -n 8 python spikeRL_amp_mpi.py --env Walker2d-v4 --epochs 5
 ```
 
-    - To run spikeRL on the risp processor:
+- To run spikeRL on the risp processor:
 
 ```bash
 cd src
